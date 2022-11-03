@@ -38,7 +38,7 @@ int main(){
 
     printf("Total number of primes in the range: %d\n", total );
     clock_t exetime = clock() - start;
-    printf("Time it took: %Lf\n", (long double) ((long double) exetime / (double) CLOCKS_PER_SEC));
+    printf("Time it took: %Lf (s)\n", (long double) ((long double) exetime / (double) CLOCKS_PER_SEC));
     return 0;
 }
 
