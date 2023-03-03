@@ -23,6 +23,7 @@ int main(){
     clock_t start = clock();
 
     int check = 0;
+    int sqrtOfUpper = sqrt(upper);
 
     for (int num = lower; num < upper + 1; num++){
         if (num == 2){
@@ -44,7 +45,7 @@ int main(){
 
             if (check == 0){
                 printf("%d\n", num);
-                if (num <= sqrt(upper)){
+                if (num <= sqrtOfUpper){
                     primes[pCount] = num;
                     pCount++;
                 }
